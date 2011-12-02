@@ -1,0 +1,8 @@
+Install with
+
+    curl https://raw.github.com/martijn/vim-config/master/bootstrap.sh -o - | sh
+
+Inspiration from:
+
+* https://github.com/krisleech/vimfiles
+* https://github.com/mutewinter/dot_vim
