@@ -2,6 +2,11 @@ Install with
 
     curl https://raw.github.com/martijn/vim-config/master/bootstrap.sh -o - | sh
 
+Tested with:
+
+* Macvim 7.3
+* CentOS 5 stock vim
+
 Inspiration from:
 
 * https://github.com/krisleech/vimfiles

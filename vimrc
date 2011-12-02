@@ -20,7 +20,6 @@ set wildmenu                    " enhanced command line completion
 set wildmode=list:longest,full  " list all matches, complete to longest, cycle full
 set complete=.,t                " Only use current file and ctags for completion
 set autoindent                  " Automatically indent new lines
-set colorcolumn=80              " Highlight 80th column
 set foldmethod=marker           " Fold on markers by default
 set foldlevel=99                " But open all by default
 set encoding=utf-8              " Best for MacVim/gVim and utf-8 terminals
@@ -32,6 +31,10 @@ set smartcase
 
 " Start scrolling 3 lines before reaching the end of the window
 set scrolloff=3
+
+if version >= 703                 " Vim 7.3 only
+  set colorcolumn=80              " Highlight 80th column
+end
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
