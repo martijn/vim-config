@@ -32,3 +32,5 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 "Bundle 'Lokaltog/vim-powerline'
 
 filetype plugin indent on
+
+runtime macros/matchit.vim               " For textobj-rubyblock
