@@ -29,6 +29,8 @@ Bundle 'sjl/gundo.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 
+Bundle 'ervandew/supertab'
+
 "Bundle 'Lokaltog/vim-powerline'
 
 filetype plugin indent on
