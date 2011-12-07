@@ -133,8 +133,8 @@ set statusline+=#%n               " Buffer number
 set statusline+=%*
 set statusline+=\ %l/%L,          " Current line number/total number of lines
 set statusline+=%c                " Column number
-set statusline+=%V                " -{Virtual column number} (Not displayed if equal to 'c')
-set statusline+=\ %p%%            " Percentage of lines through the file
+"set statusline+=%V                " -{Virtual column number} (Not displayed if equal to 'c')
+"set statusline+=\ %p%%            " Percentage of lines through the file
 
 " }}}
 
