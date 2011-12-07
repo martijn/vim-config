@@ -29,7 +29,9 @@ Bundle 'sjl/gundo.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 
+" Insert mode stuff
 Bundle 'ervandew/supertab'
+Bundle 'Raimondi/delimitMate'
 
 "Bundle 'Lokaltog/vim-powerline'
 
