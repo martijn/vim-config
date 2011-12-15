@@ -24,6 +24,7 @@ set foldmethod=marker           " Fold on markers by default
 set foldlevel=99                " But open all by default
 set encoding=utf-8              " Best for MacVim/gVim and utf-8 terminals
 set autoread                    " Automatically reread externally changed files
+set gdefault                    " Always set g flag on regexes
 
 " / searches are case-insensitive if the pattern contains no capitals
 set ignorecase 
@@ -150,6 +151,7 @@ nmap <leader>> :bnext<CR>         " Next buffer with ,>
 nmap <leader>n :set number!<CR>   " Toggle line numbers with ,n
 nmap <leader>w :w<CR>             " Save document with ,w
 nmap <leader>z :GundoToggle<CR>   " Toggle Gundo with ,z
+nmap <leader>c :cd %:p:h<CR>      " CD to path of current file
 
 " Comment lines with ,/
 vmap <leader>/ <plug>NERDCommenterInvert
