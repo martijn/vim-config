@@ -174,20 +174,20 @@ nmap <leader>r :retab!<CR>         " Retab entire document to current settings w
 
 " }}}
 
-" Redefine cursur keys to something useful {{{
+" Redefine cursor keys to something useful {{{
 
 "nnoremap <Left> :echoe "Use h"<CR>
 "nnoremap <Right> :echoe "Use l"<CR>
 "nnoremap <Up> :echoe "Use k"<CR>
 "nnoremap <Down> :echoe "Use j"<CR>
-nnoremap <Left> :GundoToggle<CR>
-nnoremap <Right> :NERDTreeToggle<CR>
-nnoremap <Up> :set list!<CR>
-nnoremap <Down> :set number!<CR>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"nnoremap <Left> :GundoToggle<CR>
+"nnoremap <Right> :NERDTreeToggle<CR>
+"nnoremap <Up> :set list!<CR>
+"nnoremap <Down> :set number!<CR>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
 
 " }}}
 
