@@ -20,14 +20,18 @@ Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
+Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'sjl/gundo.vim'
 
+" Extra text objects
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'bkad/CamelCaseMotion'
+Bundle 'michaeljsmith/vim-indent-object'
 
 " Insert mode stuff
 Bundle 'ervandew/supertab'

@@ -152,6 +152,7 @@ nmap <leader>n :set number!<CR>   " Toggle line numbers with ,n
 nmap <leader>w :w<CR>             " Save document with ,w
 nmap <leader>z :GundoToggle<CR>   " Toggle Gundo with ,z
 nmap <leader>c :cd %:p:h<CR>      " CD to path of current file
+nmap <leader>h :nohlsearch<CR>    " Clear highlight after a search
 
 " Comment lines with ,/
 vmap <leader>/ <plug>NERDCommenterInvert
