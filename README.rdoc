@@ -5,7 +5,8 @@ Install with
 Tested with:
 
 * Macvim 7.3
-* CentOS 5 stock vim
+* Linux Mint 12 stock Vim
+* CentOS 5 stock Vim (although NERDCommenter currently appears broken)
 
 Inspiration from:
 

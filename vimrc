@@ -104,10 +104,14 @@ if has("gui_running")
   let NERDChristmasTree=1         " Light up NERDTree
   let NERDTreeDirArrows=1         " Use fancy arrows in NERDTree
   
-  set fuoptions=maxvert,maxhorz   " Use the full screen in full screen mode
   set columns=100 lines=100       " Give us a nice big window on startup
   
   set guifont=Menlo:h19           " Set Menlo 19pt as font
+  set linespace=2                 " Add 2px of extra line spacing
+
+  if has('macunix')               " MacVim-only option
+    set fuoptions=maxvert,maxhorz " Use the full screen in full screen mode
+  end
 else
   " Options for consle vim
   colorscheme molokai             " Use molokai in console
