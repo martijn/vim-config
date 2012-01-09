@@ -26,6 +26,9 @@ set encoding=utf-8              " Best for MacVim/gVim and utf-8 terminals
 set autoread                    " Automatically reread externally changed files
 set gdefault                    " Always set g flag on regexes
 
+set splitbelow
+set splitright
+
 " / searches are case-insensitive if the pattern contains no capitals
 set ignorecase 
 set smartcase
