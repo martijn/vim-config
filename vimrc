@@ -253,6 +253,12 @@ if !exists(":DiffOrig")
       \ | wincmd p | diffthis
 endif
 
+" LaTeX settings
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 --interaction=nonstopmode $*'
+let g:Tex_ViewRule_pdf = 'Skim'
+
+
 " Sometimes you need your editor to pop (,p)
 function! Pop()
   colorscheme molokai

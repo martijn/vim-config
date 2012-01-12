@@ -23,6 +23,8 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
 Bundle 'kchmck/vim-coffee-script'
 
+Bundle 'jcf/vim-latex'
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 
