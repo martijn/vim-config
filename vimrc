@@ -258,6 +258,8 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 --interaction=nonstopmode $*'
 let g:Tex_ViewRule_pdf = 'Skim'
 
+" Vim Indent Guides configuration (,ig)
+let g:indent_guides_start_level = 2
 
 " Sometimes you need your editor to pop (,p)
 function! Pop()

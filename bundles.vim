@@ -41,6 +41,7 @@ Bundle 'ervandew/supertab'
 Bundle 'Raimondi/delimitMate'
 
 "Bundle 'Lokaltog/vim-powerline'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 filetype plugin indent on
 
