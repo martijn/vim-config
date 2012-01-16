@@ -38,7 +38,6 @@ Bundle 'michaeljsmith/vim-indent-object'
 
 " Insert mode stuff
 Bundle 'ervandew/supertab'
-Bundle 'Raimondi/delimitMate'
 
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'nathanaelkane/vim-indent-guides'
