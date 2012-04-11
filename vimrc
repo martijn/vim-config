@@ -62,6 +62,7 @@ map Q gq            " Disable Ex mode, remap Q to formatting
 
 " Open NERDTree with ctrl-T
 map <C-T> :execute 'NERDTreeToggle ' . getcwd()<CR>
+let NERDTreeChDirMode = 2               " Changing root node (C) changes CWD
 
 " Make :W, :Q act like :w, :q (common typo)
 cmap W w
