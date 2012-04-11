@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'martijn/molokai'
 
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
@@ -20,10 +21,12 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'jcf/vim-latex'
+Bundle 'godlygeek/tabular'
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
@@ -41,6 +44,8 @@ Bundle 'ervandew/supertab'
 
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'nathanaelkane/vim-indent-guides'
+
+Bundle 'Rykka/ColorV'
 
 filetype plugin indent on
 

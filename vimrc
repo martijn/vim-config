@@ -160,6 +160,11 @@ nmap <leader>w :w<CR>             " Save document with ,w
 nmap <leader>z :GundoToggle<CR>   " Toggle Gundo with ,z
 nmap <leader>c :cd %:p:h<CR>      " CD to path of current file
 nmap <leader>h :nohlsearch<CR>    " Clear highlight after a search
+vmap <leader>t= :Tabularize /=<CR>
+vmap <leader>t: :Tabularize /:\zs<CR>
+nmap <Leader>bi :source ~/.vim/bundles.vim<cr>:BundleInstall!<cr>
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gc :Gcommit<CR>
 
 " Comment lines with ,/
 vmap <leader>/ <plug>NERDCommenterInvert
@@ -262,11 +267,11 @@ let g:Tex_ViewRule_pdf = 'Skim'
 let g:indent_guides_start_level = 2
 
 " Sometimes you need your editor to pop (,p)
-function! Pop()
+function! GetPop()
   colorscheme molokai
   if has("gui_running")
     set guifont=Menlo:h22
     set columns=82
   endif
 endfunction
-nmap <leader>p :call Pop()<CR>
+nmap <leader>p :call GetPop()<CR>
