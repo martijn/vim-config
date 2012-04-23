@@ -36,6 +36,9 @@ set smartcase
 " Start scrolling 3 lines before reaching the end of the window
 set scrolloff=3
 
+" Keeps the cursor in the center of the window
+nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
+
 if version >= 703                 " Vim 7.3 only
   set colorcolumn=80              " Highlight 80th column
 end
@@ -183,8 +186,15 @@ nmap <leader>ss :set spell!<CR>
 set tabstop=2
 set shiftwidth=2
 set expandtab
-nmap <leader>t :set expandtab!<CR> " Switch between soft and hard tabs with ,t
+set shiftround  " Round indent to multiple of 'shiftwidth'.  Applies to > and <
+set smarttab    " Backspace at start of line remove shiftwidith worth of space
+nmap <leader>et :set expandtab!<CR> " Switch between soft and hard tabs with ,t
 nmap <leader>r :retab!<CR>         " Retab entire document to current settings with ,r
+
+
+" Indent in visual and select mode automatically re-selects
+vnoremap > >gv
+vnoremap < <gv
 
 " }}}
 
