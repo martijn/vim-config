@@ -30,6 +30,7 @@ Bundle 'godlygeek/tabular'
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'kien/ctrlp.vim'
 
 Bundle 'sjl/gundo.vim'
 

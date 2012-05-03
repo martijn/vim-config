@@ -231,6 +231,11 @@ endfunction
 
 nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 
+" Let CtrlP search filenames as well as tags
+" Generate tags for Rails projects using :Rtags
+" Be sure to install exuberant ctags (i.e. brew install ctags-exuberant)
+let g:ctrlp_extensions = ['tag']
+
 " Use :X to enable blowfish encryption on a file
 if version >= 703
   set cryptmethod=blowfish
