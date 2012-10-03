@@ -25,6 +25,9 @@ set foldlevel=99                " But open all by default
 set encoding=utf-8              " Best for MacVim/gVim and utf-8 terminals
 set autoread                    " Automatically reread externally changed files
 set gdefault                    " Always set g flag on regexes
+set matchpairs+=<:>             " Match <> with %
+set vb t_vb=                    " Disable beeping completely
+set whichwrap=b,s,<,>,[,]       " Cursor keys move from eol to start of next line
 
 set splitbelow
 set splitright
@@ -67,6 +70,9 @@ map Q gq            " Disable Ex mode, remap Q to formatting
 map <C-T> :execute 'NERDTreeToggle ' . getcwd()<CR>
 let NERDTreeChDirMode = 2               " Changing root node (C) changes CWD
 
+" Open BufferGator with ctrl-B
+map <C-B> :execute 'BuffergatorToggle'<CR>
+
 " Make :W, :Q act like :w, :q (common typo)
 cmap W w
 cmap Q q
@@ -106,7 +112,7 @@ if has("gui_running")
   
   colorscheme solarized           " Use solarized in Macvim/gVim
   set fillchars=vert:\            " Fill window borders with spaces, not pipes
-  call togglebg#map("<leader>b")  " Use ,b to switch between solarized light/dark
+  "call togglebg#map("<leader>b")  " Use ,b to switch between solarized light/dark
 
   let NERDChristmasTree=1         " Light up NERDTree
   let NERDTreeDirArrows=1         " Use fancy arrows in NERDTree
@@ -166,7 +172,7 @@ nmap <leader>c :cd %:p:h<CR>      " CD to path of current file
 nmap <leader>h :nohlsearch<CR>    " Clear highlight after a search
 vmap <leader>t= :Tabularize /=<CR>
 vmap <leader>t: :Tabularize /:\zs<CR>
-nmap <Leader>bi :source ~/.vim/bundles.vim<cr>:BundleInstall!<cr>
+"nmap <Leader>bi :source ~/.vim/bundles.vim<cr>:BundleInstall!<cr>
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gc :Gcommit<CR>
 

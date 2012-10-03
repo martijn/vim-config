@@ -24,6 +24,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'groenewege/vim-less'
 
 Bundle 'jcf/vim-latex'
 Bundle 'godlygeek/tabular'
@@ -31,6 +32,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
+Bundle 'jeetsukumaran/vim-buffergator'
 
 Bundle 'sjl/gundo.vim'
 
