@@ -119,7 +119,8 @@ if has("gui_running")
   
   set columns=100 lines=100       " Give us a nice big window on startup
   
-  set guifont=Menlo:h19           " Set Menlo 19pt as font
+  "set guifont=Menlo:h19           " Set Menlo 19pt as font
+  set guifont=Source\ Code\ Pro\ Light:h17           " Set Source Code Pro Light 17pt as font
   set linespace=2                 " Add 2px of extra line spacing
 
   if has('macunix')               " MacVim-only option
