@@ -48,7 +48,7 @@ Bundle 'ervandew/supertab'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'nathanaelkane/vim-indent-guides'
 
-Bundle 'Rykka/ColorV'
+Bundle 'Rykka/colorv.vim'
 
 filetype plugin indent on
 
