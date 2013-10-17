@@ -244,6 +244,18 @@ nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 " Be sure to install exuberant ctags (i.e. brew install ctags-exuberant)
 let g:ctrlp_extensions = ['tag']
 
+" Rpresent & Rinput
+let g:rails_projections = {
+\ "app/presenters/*_presenter.rb": {
+\   "command": "present",
+\   "template":
+\     "class %SPresenter < BasePresenter\nend",
+\   "test": [ "spec/presenters/%s_presenter_spec.rb" ] 
+\ },
+\ "app/inputs/*_input.rb": {
+\   "command": "input"
+\ }}
+
 " Use :X to enable blowfish encryption on a file
 if version >= 703
   set cryptmethod=blowfish
