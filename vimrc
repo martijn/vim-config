@@ -247,7 +247,7 @@ let g:ctrlp_extensions = ['tag']
 " Rpresent & Rinput
 let g:rails_projections = {
 \ "app/presenters/*_presenter.rb": {
-\   "command": "present",
+\   "command": "presenter",
 \   "template":
 \     "class %SPresenter < BasePresenter\nend",
 \   "test": [ "spec/presenters/%s_presenter_spec.rb" ] 
