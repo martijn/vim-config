@@ -147,7 +147,8 @@ set statusline+=%([%R%M]%)        " Read-only (RO), modified (+) and unmodifiabl
 set statusline+=\ %y              " Filetype
 set statusline+=\ %{fugitive#statusline()}  " Show Git info, via fugitive.git
 set statusline+=%=                " Right-align following items
-set statusline+=#%n               " Buffer number
+set statusline+=%{substitute(getcwd(),\"^.*/\",\"\",\"\")} " Project name
+"set statusline+= #%n               " Buffer number
 "set statusline+=%#statuslinenc#
 "set statusline+=\ %{SyntasticStatuslineFlag()}
 set statusline+=%*
