@@ -12,7 +12,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'martijn/molokai'
-Bundle 'martijn/vim-tomorrow'
+Bundle 'chriskempson/base16-vim'
 
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-bundler'

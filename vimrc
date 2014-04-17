@@ -110,8 +110,11 @@ if has("gui_running")
  
   set guioptions-=T               " Hide the toolbar
   
-  " colorscheme solarized
-  colorscheme Tomorrow
+  "colorscheme solarized
+
+  set bg=light
+  colorscheme base16-default
+
   set fillchars=vert:\            " Fill window borders with spaces, not pipes
   "call togglebg#map("<leader>b")  " Use ,b to switch between solarized light/dark
 
