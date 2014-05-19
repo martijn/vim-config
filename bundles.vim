@@ -26,6 +26,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
+Bundle 'slim-template/vim-slim.git'
 
 Bundle 'jcf/vim-latex'
 Bundle 'godlygeek/tabular'
