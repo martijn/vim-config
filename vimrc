@@ -252,6 +252,8 @@ let g:ctrlp_extensions = ['tag']
 let g:rails_projections = {
 \ "app/presenters/*_presenter.rb": {
 \   "command": "presenter",
+\   "affinity": "model",
+\   "related": "app/models/%s.rb",
 \   "template":
 \     "class %SPresenter < BasePresenter\nend",
 \   "test": [ "spec/presenters/%s_presenter_spec.rb" ] 
