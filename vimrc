@@ -133,6 +133,19 @@ if has("gui_running")
 else
   " Options for consle vim
   colorscheme molokai             " Use molokai in console
+
+  " Different cursor shape for insert mode in iTerm2
+  " http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
+  " https://gist.github.com/andyfowler/1195581#comment-532290
+  if exists('$ITERM_PROFILE')
+    if exists('$TMUX')
+      let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+      let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+    else
+      let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+      let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+    endif
+  endif
 end
 
 " }}}
