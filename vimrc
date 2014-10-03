@@ -33,7 +33,7 @@ set splitbelow
 set splitright
 
 " / searches are case-insensitive if the pattern contains no capitals
-set ignorecase 
+set ignorecase
 set smartcase
 
 " Start scrolling 3 lines before reaching the end of the window
@@ -77,7 +77,7 @@ map <C-B> :execute 'BuffergatorToggle'<CR>
 cmap W w
 cmap Q q
 
-" Escape from insert mode with jj 
+" Escape from insert mode with jj
 inoremap jj <ESC>
 
 " }}}
@@ -107,9 +107,9 @@ set bg=dark                       " Always use/assume dark background
 
 if has("gui_running")
   " Options for Macvim/gVim
- 
+
   set guioptions-=T               " Hide the toolbar
-  
+
   "colorscheme solarized
 
   set bg=light
@@ -120,9 +120,9 @@ if has("gui_running")
 
   let NERDChristmasTree=1         " Light up NERDTree
   let NERDTreeDirArrows=1         " Use fancy arrows in NERDTree
-  
+
   set columns=100 lines=100       " Give us a nice big window on startup
-  
+
   "set guifont=Menlo:h19           " Set Menlo 19pt as font
   set guifont=Source\ Code\ Pro:h17           " Set Source Code Pro Light 17pt as font
   set linespace=2                 " Add 2px of extra line spacing
@@ -180,7 +180,7 @@ set statusline+=%c                " Column number
 let mapleader=","
 
 nmap <leader>l :set list!<CR>     " Show invisibles with ,l
-set listchars=tab:▸\ ,eol:¬,trail:\ 
+set listchars=tab:▸\ ,eol:¬,trail:\
 
 nmap <leader>< :bprevious<CR>     " Previous buffer with ,<
 nmap <leader>> :bnext<CR>         " Next buffer with ,>
@@ -269,11 +269,18 @@ let g:rails_projections = {
 \   "related": "app/models/%s.rb",
 \   "template":
 \     "class %SPresenter < BasePresenter\nend",
-\   "test": [ "spec/presenters/%s_presenter_spec.rb" ] 
+\   "test": [ "spec/presenters/%s_presenter_spec.rb" ]
 \ },
 \ "app/inputs/*_input.rb": {
 \   "command": "input"
-\ }}
+\ },
+\ "app/policies/*_policy.rb": {
+\   "command": "policy",
+\   "affinity": "model",
+\   "related": "app/models/%s.rb",
+\   "template": "class %Policy < ApplicationPolicy\nend"
+\ }
+\}
 
 " Use :X to enable blowfish encryption on a file
 if version >= 703
