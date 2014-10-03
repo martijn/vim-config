@@ -12,12 +12,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'martijn/molokai'
-Bundle 'martijn/vim-tomorrow'
+Bundle 'chriskempson/base16-vim'
 
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-jdaddy' " format json with gqaj
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-rvm'
@@ -27,6 +28,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
 Bundle 'slim-template/vim-slim.git'
+Bundle 'ntpeters/vim-better-whitespace'
+Bundle 'rodjek/vim-puppet'
 
 Bundle 'jcf/vim-latex'
 Bundle 'godlygeek/tabular'
