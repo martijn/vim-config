@@ -103,27 +103,22 @@ endif
 
 " Interface options {{{
 
-set bg=dark                       " Always use/assume dark background
+colorscheme base16-default
 
 if has("gui_running")
   " Options for Macvim/gVim
- 
-  set guioptions-=T               " Hide the toolbar
-  
-  "colorscheme solarized
 
+  set guioptions-=T               " Hide the toolbar
   set bg=light
-  colorscheme base16-default
 
   set fillchars=vert:\            " Fill window borders with spaces, not pipes
   "call togglebg#map("<leader>b")  " Use ,b to switch between solarized light/dark
 
   let NERDChristmasTree=1         " Light up NERDTree
   let NERDTreeDirArrows=1         " Use fancy arrows in NERDTree
-  
+
   set columns=100 lines=100       " Give us a nice big window on startup
-  
-  "set guifont=Menlo:h19           " Set Menlo 19pt as font
+
   set guifont=Source\ Code\ Pro:h17           " Set Source Code Pro Light 17pt as font
   set linespace=2                 " Add 2px of extra line spacing
 
@@ -131,9 +126,6 @@ if has("gui_running")
     set fuoptions=maxvert,maxhorz " Use the full screen in full screen mode
   end
 else
-  " Options for consle vim
-  colorscheme molokai             " Use molokai in console
-
   " Different cursor shape for insert mode in iTerm2
   " http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
   " https://gist.github.com/andyfowler/1195581#comment-532290
