@@ -1,13 +1,13 @@
 Install with
 
-    curl https://raw.github.com/martijn/vim-config/master/bootstrap.sh | sh
+    curl https://raw.githubusercontent.com/martijn/vim-config/master/bootstrap.sh | sh
 
 Tested with:
 
-* Macvim 7.3
+* Macvim 7.4
 * FreeBSD 9 vim package
-* Linux Mint 12 stock Vim
-* CentOS 5 stock Vim (although NERDCommenter currently appears broken)
+* CentOS 5, 6 stock Vim (with minor breakage)
+* CentOS 7 stock Vim
 
 Inspiration from:
 
