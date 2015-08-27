@@ -121,10 +121,6 @@ if has("gui_running")
 
   set guifont=Source\ Code\ Pro:h17           " Set Source Code Pro Light 17pt as font
   set linespace=2                 " Add 2px of extra line spacing
-
-  if has('macunix')               " MacVim-only option
-    set fuoptions=maxvert,maxhorz " Use the full screen in full screen mode
-  end
 else
   " Different cursor shape for insert mode in iTerm2
   " http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
