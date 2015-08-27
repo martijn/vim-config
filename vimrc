@@ -265,8 +265,8 @@ let g:rails_projections = {
 \ }}
 
 " Use :X to enable blowfish encryption on a file
-if version >= 703
-  set cryptmethod=blowfish
+if version >= 704
+  set cryptmethod=blowfish2
 endif
 
 " Open my encrypted, version controlled notes file
