@@ -44,6 +44,9 @@ set scrolloff=3
 " Keeps the cursor in the center of the window
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
 
+" Switch back and forth between buffers
+nnoremap <leader><Tab> <C-^>
+
 if version >= 703                 " Vim 7.3 only
   set colorcolumn=80              " Highlight 80th column
 end
@@ -106,7 +109,7 @@ endif
 " Interface options {{{
 
 set bg=light
-colorscheme base16-default
+colorscheme PaperColor
 
 if has("gui_running")
   " Options for Macvim/gVim
@@ -143,8 +146,9 @@ end
 
 " Status line {{{
 
-" Always display the status line
+" Always display the status line and tab bar
 set laststatus=2
+set showtabline=2
 
 "http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
 set statusline=
@@ -185,6 +189,8 @@ vmap <leader>t: :Tabularize /:\zs<CR>
 "nmap <Leader>bi :source ~/.vim/bundles.vim<cr>:BundleInstall!<cr>
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gc :Gcommit<CR>
+nmap <leader>nf :NERDTreeFind<CR> " Highlight current file in NERDTree
+nmap <leader>bo :BuffergatorOpen<CR>
 
 " Comment lines with ,/
 vmap <leader>/ <plug>NERDCommenterInvert
@@ -267,7 +273,7 @@ let g:rails_projections = {
 \ }}
 
 " Use :X to enable blowfish encryption on a file
-if version >= 704
+if has('crypt')
   set cryptmethod=blowfish2
 endif
 
@@ -296,6 +302,11 @@ if &term =~ "xterm.*"
     cmap <Esc>[201~ <nop>
 endif
 
+" Neovim truecolor support
+if has('nvim')
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
@@ -311,16 +322,6 @@ let g:Tex_ViewRule_pdf = 'Skim'
 
 " Vim Indent Guides configuration (,ig)
 let g:indent_guides_start_level = 2
-
-" Sometimes you need your editor to pop (,p)
-function! GetPop()
-  colorscheme molokai
-  if has("gui_running")
-    set guifont=Menlo:h22
-    set columns=82
-  endif
-endfunction
-nmap <leader>p :call GetPop()<CR>
 
 " The Silver Searcher
 if executable('ag')
