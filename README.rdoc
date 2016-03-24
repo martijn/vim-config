@@ -2,15 +2,11 @@ Install with
 
     curl https://raw.githubusercontent.com/martijn/vim-config/master/bootstrap.sh | sh
 
-Tested with:
-
-* Macvim 7.4
-* FreeBSD 9 vim package
-* CentOS 5, 6 stock Vim (with minor breakage)
-* CentOS 7 stock Vim
+Should work on OS X and Linux.
 
 Inspiration from:
 
 * https://github.com/krisleech/vimfiles
 * https://github.com/mutewinter/dot_vim
 * https://github.com/r00k/dotfiles/blob/master/vimrc
+* https://github.com/junegunn/dotfiles
