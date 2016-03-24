@@ -24,6 +24,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'rodjek/vim-puppet'
 Plug 'gregsexton/gitv'
 Plug 'elixir-lang/vim-elixir'
+Plug 'ConradIrwin/vim-bracketed-paste'
 
 Plug 'jcf/vim-latex'
 Plug 'godlygeek/tabular'
