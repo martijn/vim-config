@@ -1,14 +1,10 @@
 #!/bin/sh
 
 OLDPWD=$PWD
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-cd $DIR
-echo "Pulling changes..."
+cd ~/.vim
 git pull
-
-echo "Updating bundle..."
-vim -c BundleInstall! -c BundleClean! -c q -c q
+vim +PlugInstall +qall
 
 cd $OLDPWD
 
