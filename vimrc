@@ -2,7 +2,9 @@
 
 set nocompatible
 
-silent! runtime bundles.vim     " Load bundles
+set shell=/bin/bash             " Fix errors related to /var/folders/...
+
+source ~/.vim/plugs.vim         " Load plugs
 
 " General settings {{{
 

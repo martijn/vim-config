@@ -1,8 +1,5 @@
 #!/bin/sh
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+curl --insecure -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim
 
-echo "Installing bundle..."
-vim -c BundleInstall! -c q -c q -u $DIR/bundles.vim
-
-echo "Done!"
+vim +PlugInstall +qall
