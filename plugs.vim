@@ -23,8 +23,14 @@ Plug 'groenewege/vim-less'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'rodjek/vim-puppet'
 Plug 'gregsexton/gitv'
-Plug 'elixir-lang/vim-elixir'
 Plug 'ConradIrwin/vim-bracketed-paste'
+
+Plug 'elixir-lang/vim-elixir'
+if has("nvim")
+  Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
+  Plug 'shougo/deoplete.nvim'
+  Plug 'thinca/vim-ref' " Doc ref for completion
+end
 
 Plug 'jcf/vim-latex'
 Plug 'godlygeek/tabular'
