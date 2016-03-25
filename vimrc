@@ -109,6 +109,7 @@ endif
 " Interface options {{{
 
 set bg=light
+let g:PaperColor_Light_Override = { 'background' : '#eeeeee' }
 colorscheme PaperColor
 
 if has("gui_running")
@@ -134,9 +135,11 @@ else
   if exists('$ITERM_PROFILE')
     if exists('$TMUX')
       let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+      let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
       let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
     else
       let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+      let &t_SR = "\<Esc>]50;CursorShape=2\x7"
       let &t_EI = "\<Esc>]50;CursorShape=0\x7"
     endif
   endif
@@ -289,6 +292,7 @@ endif
 " Neovim truecolor support
 if has('nvim')
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 endif
 
 " Convenient command to see the difference between the current buffer and the
