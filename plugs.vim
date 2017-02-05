@@ -21,6 +21,8 @@ Plug 'rodjek/vim-puppet'
 Plug 'gregsexton/gitv'
 Plug 'ConradIrwin/vim-bracketed-paste'
 
+Plug 'henrik/vim-qargs' " :Qargs / :Qdo
+
 Plug 'elixir-lang/vim-elixir'
 if has("nvim")
   Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
@@ -51,10 +53,6 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'ervandew/supertab'
 
 Plug 'nathanaelkane/vim-indent-guides'
-
-"Plug 'Rykka/colorv.vim'
-
-"Plug 'https://github.com/neilagabriel/vim-geeknote'
 
 call plug#end()
 

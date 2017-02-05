@@ -44,6 +44,8 @@ set scrolloff=3
 " Keeps the cursor in the center of the window
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR>
 
+runtime macros/matchit.vim
+
 " Switch back and forth between buffers
 nnoremap <leader><Tab> <C-^>
 
@@ -54,11 +56,6 @@ end
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
-endif
-
-" Switch syntax highlighting on, when the terminal has colors
-if &t_Co > 2 || has("gui_running")
-  syntax on
 endif
 
 " }}}
@@ -78,11 +75,7 @@ let NERDTreeChDirMode = 2               " Changing root node (C) changes CWD
 " Open BufferGator with ctrl-B
 map <C-B> :execute 'BuffergatorToggle'<CR>
 
-" Make :W, :Q act like :w, :q (common typo)
-cmap W w
-cmap Q q
-
-" Escape from insert mode with jj 
+" Escape from insert mode with jj
 inoremap jj <ESC>
 
 " }}}
@@ -109,15 +102,14 @@ endif
 " Interface options {{{
 
 set bg=light
-let g:PaperColor_Light_Override = { 'background' : '#eeeeee' }
 colorscheme PaperColor
+
+set fillchars+=vert:│
 
 if has("gui_running")
   " Options for Macvim/gVim
 
   set guioptions-=T               " Hide the toolbar
-
-  set fillchars=vert:\            " Fill window borders with spaces, not pipes
 
   let NERDChristmasTree=1         " Light up NERDTree
   let NERDTreeDirArrows=1         " Use fancy arrows in NERDTree
