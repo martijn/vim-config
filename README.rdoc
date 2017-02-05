@@ -10,3 +10,5 @@ Inspiration from:
 * https://github.com/mutewinter/dot_vim
 * https://github.com/r00k/dotfiles/blob/master/vimrc
 * https://github.com/junegunn/dotfiles
+* https://github.com/DavyCardinaal/dotfiles
+* https://github.com/shkm/dotfiles
