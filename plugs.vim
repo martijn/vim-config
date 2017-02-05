@@ -1,10 +1,6 @@
 call plug#begin()
 
 Plug 'gmarik/vundle'
-Plug 'altercation/vim-colors-solarized'
-Plug 'martijn/molokai'
-Plug 'chriskempson/base16-vim'
-Plug 'whatyouhide/vim-gotham'
 Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'vim-ruby/vim-ruby'
