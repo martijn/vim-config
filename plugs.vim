@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'gmarik/vundle'
 Plug 'NLKNguyen/papercolor-theme'
 
+Plug 'elixir-lang/vim-elixir'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
@@ -23,13 +24,6 @@ Plug 'gregsexton/gitv'
 Plug 'ConradIrwin/vim-bracketed-paste'
 
 Plug 'henrik/vim-qargs' " :Qargs / :Qdo
-
-Plug 'elixir-lang/vim-elixir'
-if has("nvim")
-  Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
-  Plug 'shougo/deoplete.nvim'
-  Plug 'thinca/vim-ref' " Doc ref for completion
-end
 
 Plug 'jcf/vim-latex'
 Plug 'godlygeek/tabular'

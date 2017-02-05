@@ -186,7 +186,6 @@ nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>gc :Gcommit<CR>
 nmap <leader>nf :NERDTreeFind<CR> " Highlight current file in NERDTree
 nmap <leader>bo :BuffergatorOpen<CR>
-nmap <leader>de :DeopleteEnable<CR>
 
 " Comment lines with ,/
 nmap <leader>/ gcc
