@@ -189,8 +189,8 @@ nmap <leader>bo :BuffergatorOpen<CR>
 nmap <leader>de :DeopleteEnable<CR>
 
 " Comment lines with ,/
-vmap <leader>/ <plug>NERDCommenterInvert
-nmap <leader>/ <plug>NERDCommenterInvert
+nmap <leader>/ gcc
+vmap <leader>/ gc
 
 " Spell checking (,ss to enable)
 nmap <leader>sn :set spelllang=nl<CR>

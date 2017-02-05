@@ -5,6 +5,7 @@ Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-jdaddy' " format json with gqaj
@@ -34,7 +35,6 @@ Plug 'jcf/vim-latex'
 Plug 'godlygeek/tabular'
 
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'mileszs/ack.vim'
