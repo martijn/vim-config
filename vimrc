@@ -310,6 +310,7 @@ if executable('ag')
   let g:ctrlp_user_command = ['ag %s -l --hidden --nocolor -g ""', '.git', 'cd %s && git ls-files -co --exclude-standard']
   let g:ctrlp_use_caching = 0
   cnoreabbrev Ag Ack
+  nnoremap <Leader>a :Ack<Space>
 endif
 
 " bind K to grep word under cursor
