@@ -33,8 +33,9 @@ Plug 'godlygeek/tabular'
 
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jeetsukumaran/vim-buffergator'
+Plug 'mileszs/ack.vim'
 
 Plug 'sjl/gundo.vim'
 
