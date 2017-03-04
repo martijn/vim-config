@@ -4,6 +4,10 @@ set nocompatible
 
 set shell=/bin/bash             " Fix errors related to /var/folders/...
 
+if has('termguicolors')
+  set termguicolors             " Set truecolor before loading papercolor theme
+end
+
 source ~/.vim/plugs.vim         " Load plugs
 
 " General settings {{{
@@ -281,9 +285,7 @@ if !empty(matchstr($MY_RUBY_HOME, 'jruby'))
   let g:ruby_path = join(split(glob($MY_RUBY_HOME.'/lib/ruby/*.*')."\n".glob($MY_RUBY_HOME.'/lib/rubysite_ruby/*'),"\n"),',')
 endif
 
-" Neovim truecolor support
 if has('nvim')
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
   let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 endif
 
